@@ -249,7 +249,7 @@ function calendari(widget, data)
 
     titol.appendChild(boto_prev);
     titol.appendChild(document.createElement('span')).innerHTML = 
-        mesos[data.getMonth()] + '<span class="any">' + data.getFullYear() + '</span>';
+        mesos[data.getMonth()] + data.getFullYear() + '</span>';
 
     titol.appendChild(boto_next);
 
