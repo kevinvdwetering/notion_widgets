@@ -85,13 +85,13 @@ tr:nth-child(2) th {
 }
 td {
     padding: 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 0px solid rgba(0,0,0,0.05);
 }
 td>span {
     color: #555;
     padding: 10px;
     display: block;
-    border: 2px solid transparent;
+    border: 0px solid transparent;
     transition: border 0.3s ease;
 }
 
@@ -106,7 +106,7 @@ td.avui>span {
     font-weight: bold;
     background-color: #4e342e;
     color: #fff;
-    border: 2px solid rgba(0,0,0,0.1);
+    border: 0px solid rgba(0,0,0,0.1);
 }
 td.fora > span {
     opacity: 0.2;
@@ -249,7 +249,7 @@ function calendari(widget, data)
 
     titol.appendChild(boto_prev);
     titol.appendChild(document.createElement('span')).innerHTML = 
-        mesos[data.getMonth()] + data.getFullYear() + '</span>';
+        mesos[data.getMonth()] + data.getFullYear(" ") + '</span>';
 
     titol.appendChild(boto_next);
 
