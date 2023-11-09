@@ -68,9 +68,10 @@ td:first-child {
 td:last-child {
     padding-right:1rem!important;
 }
-table > tr:last-child {
-    padding-bottom:10px!important;
-}
+/* bottom padding */
+tr:nth-child(6) td {
+   padding-bottom:1rem!important;
+}	
 th {
     text-align: center;
     padding: 10px;
@@ -84,11 +85,8 @@ tr:first-child th {
     border-radius: 0.4rem 0.4rem 0 0;
 }
 td:last-child, th:last-child {
-  border-right: none;
-}
-tr {
-   padding: 1.5rem;
-}
+   border-right: none;
+}    
 th {
     border-top: 0px solid rgba(0,0,0,0.1);
     border-right: 0px solid rgba(0,0,0,0.1);
