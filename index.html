@@ -46,6 +46,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     border-spacing: 0px;
+    width:50%;
     /* transform: scale(52%);
     transform: scale(0.98);
     width: 90vw;
@@ -53,7 +54,11 @@ table {
     max-width: 390px;
     max-height: 416px; */
 }
-
+.table:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
 
 td {
     text-align: center;
