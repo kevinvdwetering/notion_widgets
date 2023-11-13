@@ -151,7 +151,6 @@ td.avui>span {
     color: #fff;
     border: 0px solid rgba(0,0,0,0.1);
     border-radius: 1.5rem;
-    width: 0.87rem;
 }
 
 td.fora > span {
@@ -201,6 +200,17 @@ footer a,
 footer a:link {
   color: #fff;
   text-decoration: none;
+}
+
+/* if the browser is 205px or smaller, make different padding */
+@media only screen and (max-width: 205px) {
+	td.avui>span {
+	    width: 0.5rem;
+	}
+	td>span {
+	    padding: 0rem;
+	    padding-bottom: 0.3rem;
+	}
 }
 
 /* if the browser is 305px or smaller, make different padding */
