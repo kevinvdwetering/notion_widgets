@@ -69,7 +69,7 @@ td {
 }
 	    
 /* add padding all around the table */
-th:first-child {
+/* th:first-child {
     padding-left:1rem;
 }
 th:last-child {
@@ -82,9 +82,10 @@ td:last-child {
     padding-right:1rem;
 }
 /* bottom padding */
-tr:nth-child(8) td {
+/* tr:nth-child(8) td {
    padding-bottom:1rem;
-}	
+}
+*/
 th {
     text-align: center;
     padding: 10px;
@@ -238,6 +239,34 @@ footer a:link {
 	}
 	tr:nth-child(8) td {
 	   padding-bottom: 0.1rem!important;
+	}
+}
+
+/* if the browser is 306px or bigger, make different padding */
+@media only screen and (min-width: 306px) {
+	#calendari {
+	   font-size:0.8rem;
+	}
+	tr:first-child th {
+	   font-size: 1rem;
+	}
+	tr:nth-child(2) th {
+	   padding: 0.5rem 0rem 0.3rem 0rem;
+	}
+	th:first-child {
+	   padding-left: 1rem!important;
+	}
+	th:last-child {
+	   padding-right: 1rem!important;
+	}
+	td:first-child {
+	   padding-left: 1rem!important;
+	}
+	td:last-child {
+	   padding-right: 1rem!important;
+	}
+	tr:nth-child(8) td {
+	   padding-bottom: 1rem!important;
 	}
 }
 
